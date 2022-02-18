@@ -53,7 +53,7 @@
         "ANTISPAM_TIMER": {
             "description": "AntiSpam Timer Value in seconds",
             "value":"20",
-            "required": true
+            "required": false
         },
         "TIMEZONE": {
             "description": "Your Preffered TimeZone",
