@@ -38,11 +38,11 @@ if(strpos($message, "/apikey ") === 0 || strpos($message, "!apikey ") === 0){
         'text'=>"<b>Wait for Result...</b>",
         'parse_mode'=>'html',
         'reply_to_message_id'=> $message_id]);
-        */
+        
 
         $messageidtoedit = capture(json_encode($messageidtoedit1), '"message_id":', ',');
         $sk = substr($message, 7);
-        
+        */
         if(preg_match_all("/sk_(test|live)_[A-Za-z0-9]+/", $sk, $matches)) {
             $sk = $matches[0][0];
 
