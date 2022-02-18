@@ -50,9 +50,7 @@ $messagesec",
         [
           ['text' => "💠 Created By 💠", 'url' => "t.me/ninjanaveen"]
         ],
-        [
-          ['text' => "💎 Source Code 💎", 'url' => "t.me/IndianBotsChat"]
-        ],
+
       ], 'resize_keyboard' => true])
         
     ]);
