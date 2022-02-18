@@ -21,7 +21,7 @@ if(strpos($message, "/bin ") === 0 || strpos($message, "!bin ") === 0){
     $antispam = antispamCheck($userId);
     addUser($userId);
     
-    if($antispam != True){
+    if($antispam != False){
       bot('sendmessage',[
         'chat_id'=>$chat_id,
         'text'=>"[<u>ANTI SPAM</u>] Try again after <b>$antispam</b>s.",
