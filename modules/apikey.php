@@ -22,7 +22,7 @@ if(strpos($message, "/apikey ") === 0 || strpos($message, "!apikey ") === 0){
     $antispam = antispamCheck($userId);
     addUser($userId);
     
-  /*  if($antispam != False){
+   if($antispam != False){
       bot('sendmessage',[
         'chat_id'=>$chat_id,
         'text'=>"[<u>ANTI SPAM</u>] Try again after <b>$antispam</b>s.",
@@ -42,7 +42,7 @@ if(strpos($message, "/apikey ") === 0 || strpos($message, "!apikey ") === 0){
 
         $messageidtoedit = capture(json_encode($messageidtoedit1), '"message_id":', ',');
         $sk = substr($message, 7);
-        */
+        
         if(preg_match_all("/sk_(test|live)_[A-Za-z0-9]+/", $sk, $matches)) {
             $sk = $matches[0][0];
 
@@ -118,7 +118,7 @@ if(strpos($message, "/myapikey") === 0 || strpos($message, "!myapikey") === 0){
     $antispam = antispamCheck($userId);
     addUser($userId);
     
- /*   if($antispam != False){
+    if($antispam != False){
       bot('sendmessage',[
         'chat_id'=>$chat_id,
         'text'=>"[<u>ANTI SPAM</u>] Try again after <b>$antispam</b>s.",
@@ -128,7 +128,7 @@ if(strpos($message, "/myapikey") === 0 || strpos($message, "!myapikey") === 0){
       return;
 
     }else{
-        $apikey = fetchAPIKey($userId); */
+        $apikey = fetchAPIKey($userId); 
 
         if($chattype != 'private'){
             $apikey = substr_replace($apikey, '',12).preg_replace("/(?!^).(?!$)/", "*", substr($apikey, 12));
