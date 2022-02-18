@@ -22,7 +22,7 @@ if(strpos($message, "/apikey ") === 0 || strpos($message, "!apikey ") === 0){
     $antispam = antispamCheck($userId);
     addUser($userId);
     
-    if($antispam != False){
+  /*  if($antispam != False){
       bot('sendmessage',[
         'chat_id'=>$chat_id,
         'text'=>"[<u>ANTI SPAM</u>] Try again after <b>$antispam</b>s.",
@@ -30,6 +30,7 @@ if(strpos($message, "/apikey ") === 0 || strpos($message, "!apikey ") === 0){
         'reply_to_message_id'=> $message_id
       ]);
       return;
+      
 
     }else{
         $messageidtoedit1 = bot('sendmessage',[
@@ -37,6 +38,7 @@ if(strpos($message, "/apikey ") === 0 || strpos($message, "!apikey ") === 0){
         'text'=>"<b>Wait for Result...</b>",
         'parse_mode'=>'html',
         'reply_to_message_id'=> $message_id]);
+        */
 
         $messageidtoedit = capture(json_encode($messageidtoedit1), '"message_id":', ',');
         $sk = substr($message, 7);
