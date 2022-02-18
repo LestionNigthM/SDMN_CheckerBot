@@ -22,7 +22,7 @@ if(strpos($message, "/apikey ") === 0 || strpos($message, "!apikey ") === 0){
     $antispam = antispamCheck($userId);
     addUser($userId);
     
-   if($antispam != True){
+   if($antispam != False){
       bot('sendmessage',[
         'chat_id'=>$chat_id,
         'text'=>"[<u>ANTI SPAM</u>] Try again after <b>$antispam</b>s.",
@@ -118,7 +118,7 @@ if(strpos($message, "/myapikey") === 0 || strpos($message, "!myapikey") === 0){
     $antispam = antispamCheck($userId);
     addUser($userId);
     
-    if($antispam != True){
+    if($antispam != False){
       bot('sendmessage',[
         'chat_id'=>$chat_id,
         'text'=>"[<u>ANTI SPAM</u>] Try again after <b>$antispam</b>s.",
