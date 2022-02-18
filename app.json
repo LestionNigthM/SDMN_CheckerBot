@@ -49,11 +49,7 @@
             "description": "Enter SK Keys Here. Separate Multiple Keys with ,",
             "value": "",
             "required": false
-        },
-        "ANTISPAM_TIMER": {
-            "description": "AntiSpam Timer Value in seconds",
-            "value":"20",
-            "required": false
+
         },
         "TIMEZONE": {
             "description": "Your Preffered TimeZone",
