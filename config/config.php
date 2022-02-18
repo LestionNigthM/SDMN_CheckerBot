@@ -65,9 +65,8 @@ $config['db']['database'] =  $_ENV['DB_NAME'];
 | Anti-Spam Timer to prevent Spammers from Spamming the Checker
 | Value is in Seconds. "20" = 20seconds
 |
-
-$config['anti_spam_timer'] =  $_ENV['ANTISPAM_TIMER'];
 */
+$config['anti_spam_timer'] =  $_ENV['ANTISPAM_TIMER'];
 /*
 |--------------------------------------------------------------------------
 | SK Keys
