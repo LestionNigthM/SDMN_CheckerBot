@@ -50,6 +50,11 @@
             "value": "",
             "required": false
         },
+        "ANTISPAM_TIMER": {
+            "description": "AntiSpam Timer Value in seconds",
+            "value":"0",
+            "required": true
+        },
         "TIMEZONE": {
             "description": "Your Preffered TimeZone",
             "value": "Asia/Kolkata",
