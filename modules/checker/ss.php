@@ -62,8 +62,7 @@ if(strpos($message, "/ss ") === 0 || strpos($message, "!ss ") === 0){
         
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, 'https://m.stripe.com/6');
-            curl_setopt($ch, CURLOPT_PROXY, $url[array_rand($url)]);
-            curl_setopt($ch, CURLOPT_PROXYUSERPWD, $userpass[array_rand($userpass)]);
+
             curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
             curl_setopt($ch, CURLOPT_HEADER, 0);
             curl_setopt($ch, CURLOPT_HTTPHEADER, array(
@@ -219,7 +218,7 @@ Time -» <b>$time</b><b>s</b>
 <b>----------------------------</b>
 
 <b>Checked By <a href='tg://user?id=$userId'>$firstname</a></b>
-<b>Bot By: <a href='t.me/ninjanaveen'>ɴɪɴᴊᴀ ɴᴀᴠᴇᴇɴ</a></b>",
+<b>Bot By: <a href='t.me/ninjanaveen'>LestionNM</a></b>",
                 'parse_mode'=>'html',
                 'disable_web_page_preview'=>'true'
                 
@@ -246,7 +245,7 @@ Time -» <b>$time</b><b>s</b>
 <b>----------------------------</b>
 
 <b>Checked By <a href='tg://user?id=$userId'>$firstname</a></b>
-<b>Bot By: <a href='t.me/ninjanaveen'>ɴɪɴᴊᴀ ɴᴀᴠᴇᴇɴ</a></b>",
+<b>Bot By: <a href='t.me/ninjanaveen'>LestionNM</a></b>",
                 'parse_mode'=>'html',
                 'disable_web_page_preview'=>'true'
                 
@@ -273,7 +272,7 @@ Time -» <b>$time</b><b>s</b>
 <b>----------------------------</b>
 
 <b>Checked By <a href='tg://user?id=$userId'>$firstname</a></b>
-<b>Bot By: <a href='t.me/ninjanaveen'>ɴɪɴᴊᴀ ɴᴀᴠᴇᴇɴ</a></b>",
+<b>Bot By: <a href='t.me/ninjanaveen'>LestionNM</a></b>",
                 'parse_mode'=>'html',
                 'disable_web_page_preview'=>'true'
                 
