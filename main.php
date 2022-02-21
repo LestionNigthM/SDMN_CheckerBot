@@ -46,7 +46,7 @@ $messagesec",
           ['text' => "💠 Created By 💠", 'url' => "LestionNM"]
         ],
         [
-          ['text' => "💎 Source Code 💎", 'url' => "lESTIONnm"]
+          ['text' => "💎 Source Code 💎", 'url' => "LestionNM"]
         ],
       ], 'resize_keyboard' => true])
         
