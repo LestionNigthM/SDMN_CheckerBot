@@ -92,7 +92,7 @@ if(strpos($message, "/cmds") === 0 || strpos($message, "!cmds") === 0){
 <b>/schk | !schk - User Stripe Merchant [Needs SK]</b>
 <b>/apikey sk_live_xxx - Add SK Key for /schk gate</b>
 <b>/myapikey | !myapikey - View the added SK Key for /schk gate</b>
-<b>ϟ Join <a href='LestionNM'>LestionNM</a></b>",
+<b>ϟ Join <a href='t.me/jocker_checker_bot'>LestionNM</a></b>",
     'parse_mode'=>'html',
     'disable_web_page_preview'=>true,
     'reply_markup'=>json_encode(['inline_keyboard'=>[
