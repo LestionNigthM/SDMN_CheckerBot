@@ -62,8 +62,8 @@ if(strpos($message, "/ss ") === 0 || strpos($message, "!ss ") === 0){
         
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, 'https://m.stripe.com/6');
-curl_setopt($ch, CURLOPT_PROXY, $url[array_rand($url)]);
-            curl_setopt($ch, CURLOPT_PROXYUSERPWD, $userpass[array_rand($userpass)]);
+            curl_setopt($curl, CURLOPT_PROXY, 'http://p.webshare.io:80');
+            curl_setopt($curl, CURLOPT_PROXYUSERPWD, 'spzyllwr-rotate:g9uco54ajdpa');
             curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
             curl_setopt($ch, CURLOPT_HEADER, 0);
             curl_setopt($ch, CURLOPT_HTTPHEADER, array(
